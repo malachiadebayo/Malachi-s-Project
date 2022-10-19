@@ -1,0 +1,329 @@
+body{
+    background-color:#107E7D;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.header{
+    background-color: #95190c;
+width: 100%;
+padding: 0 20px;
+position: fixed;
+top: 0;
+left: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #95190c ;
+}
+.navbar span{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #107e7d;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #107e7d; 
+}
+.navbar ul{
+    padding: 0;
+    list-style-type: none;
+}
+.navbar ul li{
+    display: inline;
+    margin-right: 20px;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+color: #e3b505;
+
+}
+
+#hero{
+    background-image: url("images/BG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+ 
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-content h1{
+    margin-top: 100px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 48px;
+}
+.hero-content p{
+    padding: 5px 45px;
+    font-size: 22px;
+    color: white;
+}
+.hero-content button{
+    background-color: #95190c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+}
+.hero-content button a:hover{
+    color: #e3b505;
+    
+}
+.hero-content button a{
+    color: white;
+    text-decoration: none;
+}
+/* About Section */
+#about-section{
+    padding: 20px;
+}
+.about-content h2{
+    text-align: center;
+    color: #e3b505;
+    font-size: 32px;
+}
+.about-content .about-img{
+    float: left;
+    margin-right: 10px;
+    padding: 10px;
+}
+.about-img img{
+    width: 150px;
+    height: 150px;
+   border-radius: 100px;
+}
+.about-content p{
+    font-size: 20px;
+}
+
+
+/* Portfolio section */
+
+#portfolio-section{
+    padding: 20px;
+}
+#portfolio-section h2{
+    text-align: center;
+    color: #e3b505;
+    font-size: 32px;
+}
+.portfolio-item img{
+    /* width:300px; */
+    max-width: 300px;
+    /* height: 200px; */
+}
+.portfolio-item{
+    text-align: center;
+    border: 5px solid #95190c;
+    color: white;
+    text-transform: uppercase;
+    /* height: 250px; */
+}
+.portfolio{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Contact Section */
+#contact-section{
+    padding: 20px;
+    /* text-align: center; */
+}
+#contact-section h2{
+    text-align: center;
+    color: #e3b505;
+    font-size: 32px;
+}
+.form-container{
+
+    padding: 10px;
+display: flex;
+justify-content: center;
+}
+.form-container form{
+    /* margin: 0 auto; */
+    color: white;
+
+}
+
+.form-input{
+margin-bottom: 10px;
+}
+.form-input input{
+    margin-top: 5px;
+    width: 100%;
+padding: 5px;
+border: none;
+outline: none;
+border-radius: 12px;
+}
+.form-input textarea{
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+input[type=submit]{
+    background-color: #95190c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+
+/* Footer */
+#footer-section{
+    background-color: #95190c;
+    width: 100%;
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* CSS Media Queries */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+      
+        .portfolio{
+            flex-direction: column;
+            align-items: center;
+        }
+        .portfolio-item{
+            margin-bottom: 18px;
+        
+        }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+
+
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    #hero{
+        height: 550px;
+        
+    }
+    .hero-content h1{
+        margin-top: 120px;
+        font-size: 38px;
+        text-align: center;
+    }
+    .hero-content p{
+        font-size: 20px;
+        text-align: center;
+     
+    }
+    
+    .portfolio{
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-item{
+        margin-bottom: 18px;
+    
+    }
+
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    #hero{
+        height: 550px;
+        
+    }
+    .hero-content h1{
+        margin-top: 120px;
+        font-size: 38px;
+        text-align: center;
+    }
+    .hero-content p{
+        font-size: 20px;
+        text-align: center;
+     
+    }
+
+    .about-content p{
+        font-size: 18px;
+    }
+    
+    .portfolio{
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-item{
+        margin-bottom: 18px;
+    
+    }
+
+   
+    
+  }
